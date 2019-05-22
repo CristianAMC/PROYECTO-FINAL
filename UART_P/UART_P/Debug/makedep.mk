@@ -4,6 +4,8 @@
 
 src\ASF\common\services\delay\sam\cycle_counter.c
 
+src\ASF\sam\drivers\tc\tc.c
+
 src\ASF\sam\drivers\uart\uart.c
 
 src\ASF\common\services\clock\sam3x\sysclk.c
