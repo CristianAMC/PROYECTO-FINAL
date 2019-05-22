@@ -16,6 +16,7 @@ void loop() {
 
 }
 
+//ENTRADA DIGITAL Y ANALOGA-------------------------------
 void sender(){
     VALOR= analogRead (A0);
     Wire.write(VALOR);
@@ -23,5 +24,5 @@ void sender(){
     Wire.write(LED1);
     LED2 = digitalRead (1);
     Wire.write(LED2);
-    
+//------------------------------------------------------- 
 }
