@@ -1,5 +1,5 @@
 #include <Wire.h>
-#define address 32
+#define address 31
 int VALOR;
 int LED1,LED2;
 
