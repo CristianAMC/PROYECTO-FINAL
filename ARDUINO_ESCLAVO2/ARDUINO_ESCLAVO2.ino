@@ -10,6 +10,8 @@ void setup() {
   Wire.onRequest(sender);
   pinMode(0,INPUT);
   pinMode(1,INPUT); 
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
 }
 
 void loop() {
@@ -21,20 +23,20 @@ void receiver(int number){
   while(Wire.available() > 0){
     switch(number){
       case 49:{
-        if(digitalRead(0)){
-          digitalWrite(0,LOW);
+        if(digitalRead(2)){
+          digitalWrite(2,LOW);
           }
         else{
-          digitalWrite(0,HIGH);
+          digitalWrite(2,HIGH);
           }
        break;
       }
       case 50:{
-        if(digitalRead(1)){
-          digitalWrite(1, LOW);
+        if(digitalRead(3)){
+          digitalWrite(3, LOW);
           }
         else {
-          digitalWrite(1,HIGH);
+          digitalWrite(3,HIGH);
           }
         break;
           }
